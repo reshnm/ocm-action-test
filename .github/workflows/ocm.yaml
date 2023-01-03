@@ -11,7 +11,7 @@ env:
   PROVIDER: github.com/reshnm
 jobs:
   build-and-create-ocm:
-    runs-on: ubunt-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Cout out the repo
       uses: actions/checkout@v3
