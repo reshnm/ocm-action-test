@@ -37,7 +37,7 @@ jobs:
         platfroms: linux/amd64
         tags: ghcr.io/reshnm/ocm-action-test:${{ env.VERSION }}-linux-amd64
     - name: Build arm64
-      id: build_amd64
+      id: build_arm64
       uses: docker/build-push-action@v3
       with:
         push: false
