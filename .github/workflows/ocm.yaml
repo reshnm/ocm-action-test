@@ -1,6 +1,5 @@
 name: build-and-ocm
 
-name: build-and-ocm
 # trigger manually
 run-name: Build image and create component version
 on:
