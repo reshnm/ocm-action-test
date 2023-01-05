@@ -34,7 +34,7 @@ jobs:
       with:
         push: false
         load: true
-        platfroms: linux/amd64
+        platforms: linux/amd64
         tags: ghcr.io/reshnm/ocm-action-test:${{ env.VERSION }}-linux-amd64
     - name: Build arm64
       id: build_arm64
@@ -42,7 +42,7 @@ jobs:
       with:
         push: false
         load: true
-        platfroms: linux/arm64
+        platforms: linux/arm64
         tags: ghcr.io/reshnm/ocm-action-test:${{ env.VERSION }}-linux-arm64
     - name: create OCM component version
       uses: open-component-model/ocm-action@main
