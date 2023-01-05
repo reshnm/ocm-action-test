@@ -68,6 +68,12 @@ jobs:
       with:
         action: add_component
         ctf: gen/ctf
+    - name: push OCM transport archive
+      uses: open-component-model/ocm-action@main
+      with:
+        action: push_ctf
+        ctf: gen/ctf
+        comprepo_url: ghcr.io/reshnm/ocm
     - name: Upload transport archive
       uses: actions/upload-artifact@v3
       with:
